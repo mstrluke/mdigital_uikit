@@ -1,0 +1,107 @@
+/**
+ * Light Theme
+ * Default theme with light background and dark text
+ */
+
+:root,
+.light,
+:root.light,
+:root[data-mode='light'],
+[data-mode='light'] {
+  /* ============================================
+     COLOR PRIMITIVES
+     ============================================ */
+
+  /* === COLOR PRIMITIVES === */
+  --color-white: oklch(100% 0 0);
+  --color-black: oklch(0% 0 0);
+
+  /* === GRAY SCALE === */
+  --color-gray-50: oklch(98% 0 0);
+  --color-gray-100: oklch(96% 0 0);
+  --color-gray-200: oklch(92% 0 0);
+  --color-gray-300: oklch(87% 0 0);
+  --color-gray-400: oklch(71% 0 0);
+  --color-gray-500: oklch(55% 0 0);
+  --color-gray-600: oklch(45% 0 0);
+  --color-gray-700: oklch(35% 0 0);
+  --color-gray-800: oklch(25% 0 0);
+  --color-gray-900: oklch(15% 0 0);
+  --color-gray-950: oklch(10% 0 0);
+
+  /* === BRAND COLORS === */
+  --color-primary: oklch(60.29% 0.15 239.2065);
+  --color-primary-hover: oklch(50.29% 0.2 239.2065);
+  --color-primary-active: oklch(45.29% 0.2 239.2065);
+  --color-primary-foreground: oklch(100% 0 0);
+
+  --color-secondary: oklch(50% 0.05 240);
+  --color-secondary-hover: oklch(45% 0.06 240);
+  --color-secondary-active: oklch(40% 0.07 240);
+  --color-secondary-foreground: oklch(100% 0 0);
+
+  --color-accent: oklch(80% 0.1737 67);
+  --color-accent-hover: oklch(75% 0.237 67);
+  --color-accent-active: oklch(70% 0.1937 67);
+  --color-accent-foreground: oklch(15% 0 0);
+
+  /* === SEMANTIC COLORS === */
+  --color-success: oklch(70% 0.2 145);
+  --color-success-hover: oklch(65% 0.22 145);
+  --color-success-active: oklch(50% 0.24 145);
+  --color-success-foreground: oklch(100% 0 0);
+
+  --color-error: oklch(63% 0.22 25);
+  --color-error-hover: oklch(56% 0.24 25);
+  --color-error-active: oklch(50% 0.26 25);
+  --color-error-foreground: oklch(100% 0 0);
+
+  --color-warning: oklch(75% 0.15 85);
+  --color-warning-hover: oklch(70% 0.17 85);
+  --color-warning-active: oklch(65% 0.19 85);
+  --color-warning-foreground: oklch(15% 0 0);
+
+  --color-info: oklch(60% 0.19 255);
+  --color-info-hover: oklch(55% 0.21 255);
+  --color-info-active: oklch(50% 0.23 255);
+  --color-info-foreground: oklch(100% 0 0);
+
+  /* === BACKGROUND & SURFACE === */
+  --color-background: oklch(100% 0 0);
+  --color-background-secondary: oklch(98% 0 0);
+  --color-surface: oklch(96% 0 0);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(15% 0 0);
+  --color-border: oklch(93% 0 0);
+  --color-border-primary: oklch(85% 0 0);
+  --color-border-hover: oklch(80% 0 0);
+  --color-border-focus: var(--color-primary);
+
+  /* === TEXT COLORS === */
+  --color-text-primary: oklch(15% 0 0);
+  --color-text-secondary: oklch(45% 0 0);
+  --color-text-muted: oklch(60% 0 0);
+  --color-text-disabled: oklch(71% 0 0);
+
+  /* === FOCUS & INTERACTION === */
+  --color-focus: var(--color-primary);
+  --color-focus-ring: oklch(60.29% 0.15 239.2065 / 30%);
+
+  /* === DISABLED === */
+  --color-disabled: oklch(87% 0 0);
+  --color-disabled-text: oklch(55% 0 0);
+
+  /* === OVERLAY === */
+  --color-overlay: oklch(0% 0 0 / 50%);
+
+  /* === INPUT SPECIFIC === */
+  --color-input-border: oklch(87% 0 0);
+  --color-input-border-focus: oklch(55% 0.25 255);
+  --color-input-border-error: oklch(60% 0.25 25);
+  --color-input-bg: oklch(100% 0 0);
+  --color-input-text: oklch(15% 0 0);
+  --color-input-placeholder: oklch(60% 0 0);
+
+  /* === OVERLAYS & EFFECTS === */
+  --overlay-stripe: oklch(100% 0 0 / 0.15);
+}

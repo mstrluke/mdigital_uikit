@@ -1,0 +1,130 @@
+/**
+ * Corporate Theme Preset
+ * Professional navy blue palette for business applications
+ * Clean, trustworthy, enterprise-ready
+ */
+
+html[data-theme="corporate"],
+:root[data-theme="corporate"] {
+  /* === BRAND COLORS (LIGHT) === */
+  --color-primary: oklch(40% 0.18 250);
+  --color-primary-hover: oklch(35% 0.20 250);
+  --color-primary-active: oklch(30% 0.22 250);
+  --color-primary-foreground: oklch(100% 0 0);
+
+  --color-secondary: oklch(45% 0.12 220);
+  --color-secondary-hover: oklch(40% 0.14 220);
+  --color-secondary-active: oklch(35% 0.16 220);
+  --color-secondary-foreground: oklch(100% 0 0);
+
+  --color-accent: oklch(55% 0.20 200);
+  --color-accent-hover: oklch(50% 0.22 200);
+  --color-accent-active: oklch(45% 0.24 200);
+  --color-accent-foreground: oklch(100% 0 0);
+
+  /* === SEMANTIC COLORS (LIGHT) === */
+  --color-success: oklch(48% 0.18 160);
+  --color-success-hover: oklch(43% 0.20 160);
+  --color-success-active: oklch(38% 0.22 160);
+  --color-success-foreground: oklch(100% 0 0);
+
+  --color-error: oklch(52% 0.22 25);
+  --color-error-hover: oklch(47% 0.24 25);
+  --color-error-active: oklch(42% 0.26 25);
+  --color-error-foreground: oklch(100% 0 0);
+
+  --color-warning: oklch(65% 0.18 65);
+  --color-warning-hover: oklch(60% 0.20 65);
+  --color-warning-active: oklch(55% 0.22 65);
+  --color-warning-foreground: oklch(15% 0 0);
+
+  --color-info: oklch(50% 0.18 250);
+  --color-info-hover: oklch(45% 0.20 250);
+  --color-info-active: oklch(40% 0.22 250);
+  --color-info-foreground: oklch(100% 0 0);
+
+  /* === BACKGROUND & SURFACE (LIGHT) === */
+  --color-background: oklch(99% 0.005 250);
+  --color-background-secondary: oklch(97% 0.008 250);
+  --color-surface: oklch(95% 0.01 250);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(20% 0.02 250);
+  --color-border: oklch(88% 0.015 250);
+  --color-border-primary: oklch(80% 0.02 250);
+
+  /* === TEXT COLORS (LIGHT) === */
+  --color-text-primary: oklch(20% 0.02 250);
+  --color-text-secondary: oklch(40% 0.015 250);
+  --color-text-muted: oklch(55% 0.01 250);
+
+  /* === INPUT (LIGHT) === */
+  --color-input-border: oklch(85% 0.015 250);
+  --color-input-border-focus: oklch(40% 0.18 250);
+  --color-input-border-error: oklch(52% 0.22 25);
+  --color-input-bg: oklch(100% 0 0);
+}
+
+html[data-theme="corporate"].dark,
+:root[data-theme="corporate"].dark,
+html[data-theme="corporate"] .dark,
+[data-theme="corporate"].dark,
+[data-theme="corporate"] .dark {
+  /* === BRAND COLORS (DARK) ===
+     L at 55-62% keeps white text readable.
+     Hover/active go LIGHTER (higher L) on dark backgrounds. */
+  --color-primary: oklch(58% 0.18 250);
+  --color-primary-hover: oklch(63% 0.20 250);
+  --color-primary-active: oklch(68% 0.22 250);
+  --color-primary-foreground: oklch(100% 0 0);
+
+  --color-secondary: oklch(55% 0.14 220);
+  --color-secondary-hover: oklch(60% 0.16 220);
+  --color-secondary-active: oklch(65% 0.18 220);
+  --color-secondary-foreground: oklch(100% 0 0);
+
+  --color-accent: oklch(58% 0.20 200);
+  --color-accent-hover: oklch(63% 0.22 200);
+  --color-accent-active: oklch(68% 0.24 200);
+  --color-accent-foreground: oklch(100% 0 0);
+
+  /* === SEMANTIC COLORS (DARK) === */
+  --color-success: oklch(58% 0.18 160);
+  --color-success-hover: oklch(63% 0.20 160);
+  --color-success-active: oklch(68% 0.22 160);
+  --color-success-foreground: oklch(100% 0 0);
+
+  --color-error: oklch(60% 0.22 25);
+  --color-error-hover: oklch(65% 0.24 25);
+  --color-error-active: oklch(70% 0.26 25);
+  --color-error-foreground: oklch(100% 0 0);
+
+  --color-warning: oklch(75% 0.18 65);
+  --color-warning-hover: oklch(80% 0.20 65);
+  --color-warning-active: oklch(85% 0.22 65);
+  --color-warning-foreground: oklch(15% 0 0);
+
+  --color-info: oklch(58% 0.18 250);
+  --color-info-hover: oklch(63% 0.20 250);
+  --color-info-active: oklch(68% 0.22 250);
+  --color-info-foreground: oklch(100% 0 0);
+
+  /* === BACKGROUND & SURFACE (DARK) === */
+  --color-background: oklch(14% 0.02 250);
+  --color-background-secondary: oklch(17% 0.02 250);
+  --color-surface: oklch(20% 0.025 250);
+  --color-card: oklch(18% 0.02 250);
+  --color-card-foreground: oklch(95% 0.01 250);
+  --color-border: oklch(28% 0.03 250);
+  --color-border-primary: oklch(38% 0.04 250);
+
+  /* === TEXT COLORS (DARK) === */
+  --color-text-primary: oklch(95% 0.01 250);
+  --color-text-secondary: oklch(75% 0.01 250);
+  --color-text-muted: oklch(55% 0.01 250);
+
+  /* === INPUT (DARK) === */
+  --color-input-border: oklch(30% 0.03 250);
+  --color-input-border-focus: oklch(58% 0.18 250);
+  --color-input-border-error: oklch(60% 0.22 25);
+  --color-input-bg: oklch(16% 0.02 250);
+}

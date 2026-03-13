@@ -1,0 +1,1429 @@
+{
+  "version": "1.0.0",
+  "components": [
+    {
+      "name": "_utils",
+      "displayName": "Utilities",
+      "description": "Shared utility functions (cn, iconSizes, validation)",
+      "category": "_foundation",
+      "tags": [
+        "internal"
+      ],
+      "path": "src",
+      "files": [
+        "utils.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.0",
+        "tailwind-merge": "^2.2.0"
+      }
+    },
+    {
+      "name": "_types",
+      "displayName": "Types",
+      "description": "Shared type definitions (ComponentSize, ComponentColor, etc.)",
+      "category": "_foundation",
+      "tags": [
+        "internal"
+      ],
+      "path": "src",
+      "files": [
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "_variants",
+      "displayName": "Variants",
+      "description": "Color slot system CSS custom properties",
+      "category": "_foundation",
+      "tags": [
+        "internal"
+      ],
+      "path": "src",
+      "files": [
+        "variants.ts"
+      ],
+      "dependencies": [
+        "_types"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "_hooks",
+      "displayName": "Hooks",
+      "description": "Shared React hooks (useRipple, useControllable, useDebounce, etc.)",
+      "category": "_foundation",
+      "tags": [
+        "internal"
+      ],
+      "path": "src/hooks",
+      "files": [
+        "index.ts",
+        "useControllable.ts",
+        "useDebounce.ts",
+        "useMediaQuery.ts",
+        "useMenuNavigation.ts",
+        "useRipple.tsx",
+        "useThrottle.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "_shared",
+      "displayName": "Shared Utilities",
+      "description": "Shared hooks and utilities used by select/multi-select",
+      "category": "_foundation",
+      "tags": [
+        "internal"
+      ],
+      "path": "src/shared",
+      "files": [
+        "useSelectBase.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "@tanstack/react-virtual": "^3.13.12"
+      }
+    },
+    {
+      "name": "accordion",
+      "displayName": "Accordion",
+      "description": "Expandable content sections",
+      "category": "display",
+      "tags": [],
+      "path": "src/accordion",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "alert",
+      "displayName": "Alert",
+      "description": "Alert component",
+      "category": "feedback",
+      "tags": [],
+      "path": "src/alert",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "anchor",
+      "displayName": "Anchor",
+      "description": "Anchor component",
+      "category": "navigation",
+      "tags": [],
+      "path": "src/anchor",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "autocomplete",
+      "displayName": "Autocomplete",
+      "description": "Autocomplete component",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/autocomplete",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "avatar",
+      "displayName": "Avatar",
+      "description": "User avatar with fallback initials",
+      "category": "display",
+      "tags": [],
+      "path": "src/avatar",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "badge",
+      "displayName": "Badge",
+      "description": "Small status indicator",
+      "category": "display",
+      "tags": [],
+      "path": "src/badge",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "breadcrumbs",
+      "displayName": "Breadcrumbs",
+      "description": "Navigation breadcrumb trail",
+      "category": "navigation",
+      "tags": [],
+      "path": "src/breadcrumbs",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "dropdown"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "button",
+      "displayName": "Button",
+      "description": "Clickable button with variants, loading, ripple",
+      "category": "inputs",
+      "tags": [
+        "action",
+        "click",
+        "submit"
+      ],
+      "path": "src/button",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "spinner",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "@radix-ui/react-slot": "^1.2.4"
+      }
+    },
+    {
+      "name": "button-group",
+      "displayName": "Button Group",
+      "description": "Group buttons together",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/button-group",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "button"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "calendar",
+      "displayName": "Calendar",
+      "description": "Calendar component",
+      "category": "display",
+      "tags": [],
+      "path": "src/calendar",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "card",
+      "displayName": "Card",
+      "description": "Content container with header/footer",
+      "category": "display",
+      "tags": [],
+      "path": "src/card",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "carousel",
+      "displayName": "Carousel",
+      "description": "Sliding content carousel",
+      "category": "display",
+      "tags": [
+        "slider",
+        "gallery"
+      ],
+      "path": "src/carousel",
+      "files": [
+        "carousel-navigation.tsx",
+        "index.tsx",
+        "styles.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "swiper": "^12.0.3"
+      }
+    },
+    {
+      "name": "cascader",
+      "displayName": "Cascader",
+      "description": "Cascading dropdown selector",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/cascader",
+      "files": [
+        "CascaderMenu.tsx",
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "@radix-ui/react-popover": "^1.1.15"
+      }
+    },
+    {
+      "name": "checkbox",
+      "displayName": "Checkbox",
+      "description": "Checkbox input with label",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/checkbox",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "checkbox-group",
+      "displayName": "Checkbox Group",
+      "description": "Group of checkboxes",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/checkbox-group",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "clipboard",
+      "displayName": "Clipboard",
+      "description": "Copy to clipboard utility",
+      "category": "display",
+      "tags": [],
+      "path": "src/clipboard",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "collapse",
+      "displayName": "Collapse",
+      "description": "Collapsible content panel",
+      "category": "display",
+      "tags": [],
+      "path": "src/collapse",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "color-picker",
+      "displayName": "Color Picker",
+      "description": "Color Picker component",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/color-picker",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "_hooks"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "command",
+      "displayName": "Command",
+      "description": "Command palette / search dialog",
+      "category": "overlay",
+      "tags": [],
+      "path": "src/command",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "modal"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "cmdk": "^1.1.1"
+      }
+    },
+    {
+      "name": "context-menu",
+      "displayName": "Context Menu",
+      "description": "Right-click context menu",
+      "category": "overlay",
+      "tags": [],
+      "path": "src/context-menu",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "@radix-ui/react-popover": "^1.1.15"
+      }
+    },
+    {
+      "name": "date-picker",
+      "displayName": "Date Picker",
+      "description": "Date selection input",
+      "category": "inputs",
+      "tags": [
+        "calendar",
+        "form"
+      ],
+      "path": "src/date-picker",
+      "files": [
+        "CalendarHeader.tsx",
+        "MonthSelector.tsx",
+        "PickerWrapper.tsx",
+        "RangePicker.tsx",
+        "TimePicker.tsx",
+        "YearSelector.tsx",
+        "index.tsx",
+        "shared.ts",
+        "types.ts",
+        "utils.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "react-datepicker": "^8.8.0"
+      }
+    },
+    {
+      "name": "descriptions",
+      "displayName": "Descriptions",
+      "description": "Key-value display list",
+      "category": "display",
+      "tags": [],
+      "path": "src/descriptions",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "divider",
+      "displayName": "Divider",
+      "description": "Content separator line",
+      "category": "display",
+      "tags": [],
+      "path": "src/divider",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "drawer",
+      "displayName": "Drawer",
+      "description": "Slide-out panel overlay",
+      "category": "overlay",
+      "tags": [
+        "sidebar",
+        "panel"
+      ],
+      "path": "src/drawer",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "vaul": "^1.1.2"
+      }
+    },
+    {
+      "name": "dropdown",
+      "displayName": "Dropdown",
+      "description": "Dropdown menu trigger",
+      "category": "overlay",
+      "tags": [],
+      "path": "src/dropdown",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "_hooks"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "fetching-overlay",
+      "displayName": "Fetching Overlay",
+      "description": "Loading overlay for async content",
+      "category": "feedback",
+      "tags": [],
+      "path": "src/fetching-overlay",
+      "files": [
+        "index.tsx"
+      ],
+      "dependencies": [
+        "spinner"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "float-button",
+      "displayName": "Float Button",
+      "description": "Float Button component",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/float-button",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "float-input",
+      "displayName": "Float Input",
+      "description": "Input with floating label",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/float-input",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "spinner"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "grid",
+      "displayName": "Grid",
+      "description": "Responsive CSS grid layout",
+      "category": "layout",
+      "tags": [],
+      "path": "src/grid",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "image",
+      "displayName": "Image",
+      "description": "Image with fallback and preview",
+      "category": "display",
+      "tags": [],
+      "path": "src/image",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "input",
+      "displayName": "Input",
+      "description": "Text input with variants and validation",
+      "category": "inputs",
+      "tags": [
+        "form",
+        "text",
+        "field"
+      ],
+      "path": "src/input",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "spinner"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "input-group",
+      "displayName": "Input Group",
+      "description": "Group inputs with addons",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/input-group",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "input-otp",
+      "displayName": "Input Otp",
+      "description": "One-time password input",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/input-otp",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "input-password",
+      "displayName": "Input Password",
+      "description": "Password input with toggle visibility",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/input-password",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "input"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "kbd",
+      "displayName": "Kbd",
+      "description": "Keyboard shortcut display",
+      "category": "display",
+      "tags": [],
+      "path": "src/kbd",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "link",
+      "displayName": "Link",
+      "description": "Styled anchor link",
+      "category": "navigation",
+      "tags": [],
+      "path": "src/link",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "mentions",
+      "displayName": "Mentions",
+      "description": "Mentions component",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/mentions",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "menubar",
+      "displayName": "Menubar",
+      "description": "Horizontal menu bar",
+      "category": "navigation",
+      "tags": [],
+      "path": "src/menubar",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "modal",
+      "displayName": "Modal",
+      "description": "Dialog overlay",
+      "category": "overlay",
+      "tags": [
+        "dialog",
+        "popup"
+      ],
+      "path": "src/modal",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "@radix-ui/react-dialog": "^1.1.15"
+      }
+    },
+    {
+      "name": "multi-select",
+      "displayName": "Multi Select",
+      "description": "Multi-value select dropdown",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/multi-select",
+      "files": [
+        "index.tsx",
+        "types.ts",
+        "utils.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "spinner",
+        "_shared",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "navigation-menu",
+      "displayName": "Navigation Menu",
+      "description": "Main navigation component",
+      "category": "navigation",
+      "tags": [],
+      "path": "src/navigation-menu",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "notification",
+      "displayName": "Notification",
+      "description": "Alert notification banner",
+      "category": "feedback",
+      "tags": [
+        "alert",
+        "message",
+        "banner"
+      ],
+      "path": "src/notification",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "number-input",
+      "displayName": "Number Input",
+      "description": "Numeric input with stepper",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/number-input",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "spinner",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "pagination",
+      "displayName": "Pagination",
+      "description": "Page navigation controls",
+      "category": "navigation",
+      "tags": [],
+      "path": "src/pagination",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "popover",
+      "displayName": "Popover",
+      "description": "Floating content popover",
+      "category": "overlay",
+      "tags": [],
+      "path": "src/popover",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "@radix-ui/react-popover": "^1.1.15"
+      }
+    },
+    {
+      "name": "progress",
+      "displayName": "Progress",
+      "description": "Progress bar indicator",
+      "category": "feedback",
+      "tags": [],
+      "path": "src/progress",
+      "files": [
+        "index.tsx",
+        "styles.ts",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "qr-code",
+      "displayName": "Qr Code",
+      "description": "Qr Code component",
+      "category": "display",
+      "tags": [],
+      "path": "src/qr-code",
+      "files": [
+        "index.tsx",
+        "qrcode.d.ts",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "radio",
+      "displayName": "Radio",
+      "description": "Radio button input",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/radio",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "radio-group",
+      "displayName": "Radio Group",
+      "description": "Group of radio buttons",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/radio-group",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "rating",
+      "displayName": "Rating",
+      "description": "Star rating input",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/rating",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "resizable",
+      "displayName": "Resizable",
+      "description": "Resizable component",
+      "category": "layout",
+      "tags": [],
+      "path": "src/resizable",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "react-resizable-panels": "^4.6.5",
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "result",
+      "displayName": "Result",
+      "description": "Result component",
+      "category": "feedback",
+      "tags": [],
+      "path": "src/result",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "scroll-area",
+      "displayName": "Scroll Area",
+      "description": "Custom scrollbar container",
+      "category": "layout",
+      "tags": [],
+      "path": "src/scroll-area",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "select",
+      "displayName": "Select",
+      "description": "Single select dropdown",
+      "category": "inputs",
+      "tags": [
+        "dropdown",
+        "picker",
+        "form"
+      ],
+      "path": "src/select",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "spinner",
+        "_shared",
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "skeleton",
+      "displayName": "Skeleton",
+      "description": "Loading placeholder skeleton",
+      "category": "display",
+      "tags": [],
+      "path": "src/skeleton",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "slider",
+      "displayName": "Slider",
+      "description": "Range slider input",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/slider",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "spinner",
+      "displayName": "Spinner",
+      "description": "Loading spinner animation",
+      "category": "feedback",
+      "tags": [],
+      "path": "src/spinner",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "stepper",
+      "displayName": "Stepper",
+      "description": "Step progress indicator",
+      "category": "feedback",
+      "tags": [],
+      "path": "src/stepper",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "switch",
+      "displayName": "Switch",
+      "description": "Toggle switch input",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/switch",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "table",
+      "displayName": "Table",
+      "description": "Data table with sorting, filtering, pagination",
+      "category": "display",
+      "tags": [
+        "data",
+        "grid",
+        "sort",
+        "filter"
+      ],
+      "path": "src/table",
+      "files": [
+        "EditableCell.tsx",
+        "TableActions.tsx",
+        "TableCell.tsx",
+        "TableHeaderCell.tsx",
+        "TableRow.tsx",
+        "TableSkeleton.tsx",
+        "index.tsx",
+        "types.ts",
+        "variants.ts"
+      ],
+      "dependencies": [
+        "button",
+        "checkbox",
+        "input",
+        "pagination",
+        "popover",
+        "toggle-group"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "@tanstack/react-table": "^8.21.3"
+      }
+    },
+    {
+      "name": "tabs",
+      "displayName": "Tabs",
+      "description": "Tabbed content panels",
+      "category": "display",
+      "tags": [
+        "navigation",
+        "panels"
+      ],
+      "path": "src/tabs",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "tag",
+      "displayName": "Tag",
+      "description": "Removable tag/chip",
+      "category": "display",
+      "tags": [],
+      "path": "src/tag",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "tags-input",
+      "displayName": "Tags Input",
+      "description": "Tags Input component",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/tags-input",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "textarea",
+      "displayName": "Textarea",
+      "description": "Multi-line text input",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/textarea",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "timeline",
+      "displayName": "Timeline",
+      "description": "Vertical timeline display",
+      "category": "display",
+      "tags": [],
+      "path": "src/timeline",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "toast",
+      "displayName": "Toast",
+      "description": "Temporary toast notification",
+      "category": "feedback",
+      "tags": [
+        "alert",
+        "message"
+      ],
+      "path": "src/toast",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0",
+        "sonner": "^2.0.7"
+      }
+    },
+    {
+      "name": "toggle",
+      "displayName": "Toggle",
+      "description": "Toggle button",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/toggle",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "toggle-group",
+      "displayName": "Toggle Group",
+      "description": "Group of toggle buttons",
+      "category": "inputs",
+      "tags": [],
+      "path": "src/toggle-group",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {}
+    },
+    {
+      "name": "tooltip",
+      "displayName": "Tooltip",
+      "description": "Hover tooltip",
+      "category": "overlay",
+      "tags": [
+        "hover",
+        "info"
+      ],
+      "path": "src/tooltip",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "@radix-ui/react-tooltip": "^1.2.8"
+      }
+    },
+    {
+      "name": "tour",
+      "displayName": "Tour",
+      "description": "Tour component",
+      "category": "overlay",
+      "tags": [],
+      "path": "src/tour",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "transfer",
+      "displayName": "Transfer",
+      "description": "Dual-list transfer widget",
+      "category": "inputs",
+      "tags": [
+        "dual-list",
+        "move"
+      ],
+      "path": "src/transfer",
+      "files": [
+        "index.tsx",
+        "types.ts",
+        "utils.ts"
+      ],
+      "dependencies": [
+        "checkbox"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "tree",
+      "displayName": "Tree",
+      "description": "Tree view with checkboxes",
+      "category": "data",
+      "tags": [
+        "hierarchy",
+        "nested"
+      ],
+      "path": "src/tree",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "tree-select",
+      "displayName": "Tree Select",
+      "description": "Tree-based select dropdown",
+      "category": "overlay",
+      "tags": [],
+      "path": "src/tree-select",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [
+        "popover",
+        "tree"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "typography",
+      "displayName": "Typography",
+      "description": "Typography component",
+      "category": "display",
+      "tags": [],
+      "path": "src/typography",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "upload",
+      "displayName": "Upload",
+      "description": "File upload with drag-and-drop",
+      "category": "inputs",
+      "tags": [
+        "file",
+        "drag-drop"
+      ],
+      "path": "src/upload",
+      "files": [
+        "index.tsx",
+        "types.ts",
+        "utils.ts"
+      ],
+      "dependencies": [
+        "_hooks"
+      ],
+      "peerDependencies": {
+        "lucide-react": "^>=0.400.0"
+      }
+    },
+    {
+      "name": "watermark",
+      "displayName": "Watermark",
+      "description": "Watermark component",
+      "category": "utility",
+      "tags": [],
+      "path": "src/watermark",
+      "files": [
+        "index.tsx",
+        "types.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    },
+    {
+      "name": "theme",
+      "displayName": "Theme Provider",
+      "description": "Dark/light mode with presets, system detection, localStorage persistence",
+      "category": "utility",
+      "tags": [
+        "theme",
+        "dark-mode",
+        "light-mode",
+        "provider"
+      ],
+      "path": "src/theme",
+      "files": [
+        "ThemeProvider.tsx",
+        "types.ts",
+        "index.ts"
+      ],
+      "dependencies": [],
+      "peerDependencies": {}
+    }
+  ]
+}

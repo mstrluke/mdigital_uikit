@@ -1,0 +1,132 @@
+import { defineConfig } from 'tsup'
+
+// Shared external dependencies
+// These packages are NOT bundled - consumers must have them installed
+const external = [
+  // React core
+  'react',
+  'react-dom',
+  'react/jsx-runtime',
+  // Radix UI primitives
+  '@radix-ui/react-dialog',
+  '@radix-ui/react-popover',
+  '@radix-ui/react-tooltip',
+  // Icons
+  'lucide-react',
+  // Swiper (carousel)
+  'swiper',
+  'swiper/modules',
+  'swiper/react',
+  'swiper/types',
+  'swiper/css',
+  'swiper/css/pagination',
+  // Command palette
+  'cmdk',
+  // Table
+  '@tanstack/react-table',
+  '@tanstack/react-virtual',
+  // Date picker
+  'react-datepicker',
+  'react-datepicker/dist/react-datepicker.css',
+  // Drawer
+  'vaul',
+  // Form
+  'react-hook-form',
+  'zod',
+]
+
+// Build configuration for JavaScript output (all entry points for code splitting)
+const jsConfig = defineConfig({
+  entry: [
+    'src/index.ts',
+    'src/accordion/index.tsx',
+    'src/alert/index.tsx',
+    'src/anchor/index.tsx',
+    'src/autocomplete/index.tsx',
+    'src/avatar/index.tsx',
+    'src/badge/index.tsx',
+    'src/breadcrumbs/index.tsx',
+    'src/button/index.tsx',
+    'src/button-group/index.tsx',
+    'src/calendar/index.tsx',
+    'src/card/index.tsx',
+    'src/carousel/index.tsx',
+    'src/cascader/index.tsx',
+    'src/checkbox/index.tsx',
+    'src/checkbox-group/index.tsx',
+    'src/clipboard/index.tsx',
+    'src/collapse/index.tsx',
+    'src/color-picker/index.tsx',
+    'src/command/index.tsx',
+    'src/context-menu/index.tsx',
+    'src/date-picker/index.tsx',
+    'src/descriptions/index.tsx',
+    'src/divider/index.tsx',
+    'src/drawer/index.tsx',
+    'src/dropdown/index.tsx',
+    'src/fetching-overlay/index.tsx',
+    'src/float-button/index.tsx',
+    'src/float-input/index.tsx',
+    'src/grid/index.tsx',
+    'src/image/index.tsx',
+    'src/input/index.tsx',
+    'src/input-group/index.tsx',
+    'src/input-otp/index.tsx',
+    'src/input-password/index.tsx',
+    'src/kbd/index.tsx',
+    'src/link/index.tsx',
+    'src/mentions/index.tsx',
+    'src/menubar/index.tsx',
+    'src/modal/index.tsx',
+    'src/multi-select/index.tsx',
+    'src/navigation-menu/index.tsx',
+    'src/notification/index.tsx',
+    'src/number-input/index.tsx',
+    'src/pagination/index.tsx',
+    'src/popover/index.tsx',
+    'src/progress/index.tsx',
+    'src/qr-code/index.tsx',
+    'src/radio/index.tsx',
+    'src/radio-group/index.tsx',
+    'src/rating/index.tsx',
+    'src/resizable/index.tsx',
+    'src/result/index.tsx',
+    'src/scroll-area/index.tsx',
+    'src/select/index.tsx',
+    'src/skeleton/index.tsx',
+    'src/slider/index.tsx',
+    'src/spinner/index.tsx',
+    'src/stepper/index.tsx',
+    'src/switch/index.tsx',
+    'src/table/index.tsx',
+    'src/tabs/index.tsx',
+    'src/tag/index.tsx',
+    'src/tags-input/index.tsx',
+    'src/textarea/index.tsx',
+    'src/theme/index.ts',
+    'src/timeline/index.tsx',
+    'src/toast/index.tsx',
+    'src/toggle/index.tsx',
+    'src/toggle-group/index.tsx',
+    'src/tooltip/index.tsx',
+    'src/tour/index.tsx',
+    'src/transfer/index.tsx',
+    'src/tree/index.tsx',
+    'src/tree-select/index.tsx',
+    'src/typography/index.tsx',
+    'src/upload/index.tsx',
+    'src/watermark/index.tsx',
+  ],
+  format: ['esm'],
+  dts: false,
+  sourcemap: true,
+  clean: true,
+  external,
+  treeshake: true,
+  splitting: true,
+})
+
+// TypeScript declarations are enabled for better developer experience
+// This provides full autocomplete and type-safety for library consumers
+
+export default jsConfig
