@@ -1,5 +1,15 @@
 # @mdigital_ui/ui
 
+[![CI](https://github.com/mstrluke/mdigital_uikit/actions/workflows/ci.yml/badge.svg)](https://github.com/mstrluke/mdigital_uikit/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@mdigital_ui/ui?color=blue)](https://www.npmjs.com/package/@mdigital_ui/ui)
+[![downloads](https://img.shields.io/npm/dm/@mdigital_ui/ui?color=green)](https://www.npmjs.com/package/@mdigital_ui/ui)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@mdigital_ui/ui)](https://bundlephobia.com/package/@mdigital_ui/ui)
+[![license](https://img.shields.io/github/license/mstrluke/mdigital_uikit)](https://github.com/mstrluke/mdigital_uikit/blob/main/LICENSE)
+
+[Changelog](https://github.com/mstrluke/mdigital_uikit/releases) · [Report Bug](https://github.com/mstrluke/mdigital_uikit/issues/new?template=bug_report.md) · [Request Feature](https://github.com/mstrluke/mdigital_uikit/issues/new?template=feature_request.md)
+
+---
+
 React component library. 76 components. Tailwind CSS v4, CVA, Radix UI.
 
 ## Install
