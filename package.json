@@ -1,6 +1,6 @@
 {
   "name": "@mdigital_ui/ui",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Modern React component library built with Tailwind CSS v4",
   "type": "module",
   "main": "./dist/index.js",
