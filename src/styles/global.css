@@ -331,9 +331,9 @@
 /* ============================================
    DARK MODE
    ============================================ */
-:root.dark,
+:root:where(.dark),
 .dark,
-:root[data-mode='dark'],
+:root:where([data-mode='dark']),
 [data-mode='dark'] {
   --color-primary: oklch(62% 0.17 239);
   --color-primary-hover: oklch(67% 0.19 239);

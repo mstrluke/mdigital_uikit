@@ -142,9 +142,13 @@ Available: `corporate`, `vibrant`, `minimal`. Mix with dark/light freely.
 
 ## Custom Tokens
 
-Override after our import:
+Override after our import — no `!important` needed:
 
 ```css
+@import "tailwindcss";
+@import "@mdigital_ui/ui/styles/global.css";
+
+/* Your overrides — just plain :root, wins by source order */
 :root {
   --color-primary: oklch(0.55 0.22 270);
   --color-primary-hover: oklch(0.50 0.24 270);
@@ -153,9 +157,15 @@ Override after our import:
   --font-sans: 'Inter', system-ui, sans-serif;
   --button-height-md: 2.5rem;
 }
+
+/* Optional: different dark mode values */
+.dark {
+  --color-primary: oklch(0.65 0.22 270);
+  --color-background: oklch(0.12 0.01 270);
+}
 ```
 
-Every token is a CSS variable. Change one, it propagates everywhere.
+Every token is a CSS variable. Change one, it propagates everywhere. Dark mode selectors use `:where()` to keep specificity flat — your overrides always win by source order.
 
 ---
 
