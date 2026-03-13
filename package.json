@@ -450,7 +450,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdigital/ui.git"
+    "url": "git+https://github.com/mstrluke/mdigital_uikit.git"
   },
   "license": "MIT",
   "publishConfig": {
